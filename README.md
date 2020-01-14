@@ -1,0 +1,2 @@
+# sshd
+Dockerized sshd daemon
