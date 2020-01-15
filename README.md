@@ -21,7 +21,11 @@ PORT="2022"
 [ -d "${BASE_DIR}/root" ]   && OPTIONS="$OPTIONS -v $BASE_DIR/root:/root"
 docker run -d -p $PORT:22 --name ${NAME} --hostname ${NAME} --restart=always $OPTIONS neomediatech/sshd
 ```
-
+If you want to keep logs then add commands below before `docker run`:
+```
+mkdir -p ${BASE_DIR}/log && chmod 777 ${BASE_DIR}/log && touch ${BASE_DIR}/log/auth.log && chmod 666 ${BASE_DIR}/log/auth.log
+OPTIONS="$OPTIONS -v $BASE_DIR/log/auth.log:/var/log/auth.log"
+```
 ## Options
 $BASE_DIR/conf and $BASE_DIR/shadow should exists in order to customi[s|z]e your sshd server
 
