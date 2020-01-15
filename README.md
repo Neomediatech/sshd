@@ -23,7 +23,8 @@ docker run -d -p $PORT:22 --name ${NAME} --hostname ${NAME} --restart=always $OP
 ```
 If you want to keep logs then add commands below before `docker run`:
 ```
-mkdir -p ${BASE_DIR}/log && chmod 777 ${BASE_DIR}/log && touch ${BASE_DIR}/log/auth.log && chmod 666 ${BASE_DIR}/log/auth.log
+mkdir -p ${BASE_DIR}/log && chmod 777 ${BASE_DIR}/log && touch ${BASE_DIR}/log/auth.log && \
+         chmod 666 ${BASE_DIR}/log/auth.log
 OPTIONS="$OPTIONS -v $BASE_DIR/log/auth.log:/var/log/auth.log"
 ```
 ## Options
