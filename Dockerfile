@@ -9,8 +9,8 @@ LABEL maintainer="docker-dario@neomediatech.it" \
       org.label-schema.vcs-url=https://github.com/Neomediatech/${SERVICE} \
       org.label-schema.maintainer=Neomediatech
 
-RUN apt update && apt -y dist-upgrade && \
-    apt install -y --no-install-recommends vim bash-completion sudo curl wget xz-utils rsyslog && \
+RUN apt-get update && apt -y dist-upgrade && \
+    apt-get install -y --no-install-recommends vim bash-completion sudo curl wget xz-utils rsyslog && \
     rm -rf /var/lib/apt/lists* 
 
 COPY bin/* /
