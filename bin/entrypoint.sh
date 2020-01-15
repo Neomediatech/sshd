@@ -34,7 +34,7 @@ fi
 
 which ssh 1>/dev/null
 if [ $? -eq 1 ]; then
-   apt update && apt install -y --no-install-recommends openssh-server && \
+   apt-get update && apt-get install -y --no-install-recommends openssh-server && \
    rm -rf /var/lib/apt/lists*
 fi
 
