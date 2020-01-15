@@ -11,7 +11,7 @@ if [ -f /data/shadow ]; then
 
    uid=1000
    sudoers=""
-   for u in $(cat /data/shadow | sed '1d' | awk -F: '{print $1}'); do
+   for u in $(cat /data/shadow | grep -v ^root: | awk -F: '{print $1}'); do
       grep -q $u: /etc/shadow
       if [ $? -eq 1 ]; then
         echo "$u:x:$uid:$uid::/home/$u:/bin/bash" >> /etc/passwd
