@@ -9,13 +9,13 @@ LABEL maintainer="docker-dario@neomediatech.it" \
       org.label-schema.vcs-url=https://github.com/Neomediatech/${SERVICE} \
       org.label-schema.maintainer=Neomediatech
 
-RUN apt-get update && apt-get -y dist-upgrade && \
-    apt-get install -y --no-install-recommends vim bash-completion sudo curl wget xz-utils openssh-server && \
+RUN apt update && apt -y dist-upgrade && \
+    apt install -y --no-install-recommends vim bash-completion sudo curl wget xz-utils rsyslog && \
     rm -rf /var/lib/apt/lists* 
 
 COPY bin/* /
-RUN chmod +x /entrypoint.sh 
+RUN chmod +x /entrypoint.sh /cmd.sh
 
 EXPOSE 22
 ENTRYPOINT ["/entrypoint.sh"]
-CMD ["/tini", "--", "/usr/sbin/sshd", "-D", "-e"]
+CMD ["/tini", "--", "/cmd.sh"]
