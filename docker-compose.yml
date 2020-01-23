@@ -29,7 +29,7 @@ services:
       - sshd_conf:/etc/ssh
       - sshd_homes:/home
       - sshd_root:/root
-      - sshd_shadow:/data/shadow
+      - sshd_shadowdir:/data
       - logs:/var/log
 
 volumes:
@@ -51,15 +51,15 @@ volumes:
       type: none
       o: bind
       device: ${STACK_BASE_PATH}/root
-  sshd_shadow:
+  sshd_shadowdir:
     driver: local
     driver_opts:
       type: none
       o: bind
-      device: ${STACK_BASE_PATH}/shadow
+      device: ${STACK_BASE_PATH}/shadowdir
   logs:
     driver: local
     driver_opts:
       type: none
       o: bind
-      device: ${STACK_BASE_PATH}/shadow
+      device: ${STACK_BASE_PATH}/logs
