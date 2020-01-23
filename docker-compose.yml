@@ -1,0 +1,65 @@
+# use to create a swarm template in Portainer
+# STACK_BASE_PATH [base folder where to host files, must exists]
+# STACK_BASE_PATH=/srv/data/docker/containers/sshd ; grep device docker-compose.yml|grep -v "#"|awk '{print $2}'|while read dir; do eval mkdir -p $dir; done
+# MAILSERVER_CERT=yourmailserver.domain.tld
+# Prior to run this stack you must have a SSL certificate to be used by dovecot and exim and a certificate used
+#   by the webmail container
+
+version: '3.7'
+
+x-default-opts: 
+  &default-opts
+  deploy:
+    restart_policy:
+      delay: 5s
+      #max_attempts: 3
+      window: 20s
+  
+services:
+  sshd:
+    image: neomediatech/sshd:latest
+    hostname: sshd-dc
+    <<: *default-opts    
+    ports:
+      - target: 22
+        published: 22222
+        protocol: tcp
+        mode: host
+    volumes:
+      - sshd_conf:/etc/ssh
+      - sshd_homes:/home
+      - sshd_root:/root
+      - sshd_shadow:/data/shadow
+      - logs:/var/log
+
+volumes:
+  sshd_conf:
+    driver: local
+    driver_opts:
+      type: none
+      o: bind
+      device: ${STACK_BASE_PATH}/conf
+  sshd_homes:
+    driver: local
+    driver_opts:
+      type: none
+      o: bind
+      device: ${STACK_BASE_PATH}/home
+  sshd_root:
+    driver: local
+    driver_opts:
+      type: none
+      o: bind
+      device: ${STACK_BASE_PATH}/root
+  sshd_shadow:
+    driver: local
+    driver_opts:
+      type: none
+      o: bind
+      device: ${STACK_BASE_PATH}/shadow
+  logs:
+    driver: local
+    driver_opts:
+      type: none
+      o: bind
+      device: ${STACK_BASE_PATH}/shadow
