@@ -10,7 +10,10 @@ LABEL maintainer="docker-dario@neomediatech.it" \
       org.label-schema.maintainer=Neomediatech
 
 RUN apt-get update && apt-get -y dist-upgrade && \
-    apt-get install -y --no-install-recommends vim bash-completion sudo curl wget xz-utils rsyslog && \
+    apt-get install -y --no-install-recommends \
+    vim bash-completion sudo curl wget xz-utils \
+    rsyslog openssh-server && \
+    rm -f /etc/ssh/ssh_host_* && \
     rm -rf /var/lib/apt/lists* 
 
 COPY bin/* /
