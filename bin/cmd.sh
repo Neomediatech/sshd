@@ -2,5 +2,5 @@
 
 rsyslogd -n &
 /usr/sbin/sshd -D &
-tail -f /var/log/auth.log &
+tail -F /var/log/auth.log &
 wait -n
