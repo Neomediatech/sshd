@@ -1,9 +1,6 @@
 # use to create a swarm template in Portainer
 # STACK_BASE_PATH [base folder where to host files, must exists]
 # STACK_BASE_PATH=/srv/data/docker/containers/sshd ; grep device docker-compose.yml|grep -v "#"|awk '{print $2}'|while read dir; do eval mkdir -p $dir; done
-# MAILSERVER_CERT=yourmailserver.domain.tld
-# Prior to run this stack you must have a SSL certificate to be used by dovecot and exim and a certificate used
-#   by the webmail container
 
 version: '3.7'
 
