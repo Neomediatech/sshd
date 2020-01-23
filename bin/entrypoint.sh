@@ -3,6 +3,9 @@
 [ ! -d /run/sshd ] && mkdir -p /run/sshd
 chown root:syslog /var/log && chmod 775 /var/log
 [ ! -f /var/log/auth.log ] && touch /var/log/auth.log && chmod 666 /var/log/auth.log
+touch /run/utmp /var/log/{btmp,lastlog,wtmp}
+chgrp -v utmp /var/run/utmp /var/log/lastlog
+chmod -v 664 /var/run/utmp /var/log/lastlog
 
 if [ -f /data/shadow ]; then
    chown root:shadow /data/shadow && chmod 640 /data/shadow
