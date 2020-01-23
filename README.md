@@ -16,19 +16,19 @@ BASE_DIR="/srv/data/docker/containers/${NAME}"
 OPTIONS=""
 PORT="2022"
 [ -d "${BASE_DIR}/conf" ]   && OPTIONS="$OPTIONS -v $BASE_DIR/conf:/etc/ssh"
-[ -f "${BASE_DIR}/shadow" ] && OPTIONS="$OPTIONS -v $BASE_DIR/shadow:/data/shadow"
+[ -f "${BASE_DIR}/shadow" ] && OPTIONS="$OPTIONS -v $BASE_DIR/shadowdir:/data"
 [ -d "${BASE_DIR}/home" ]   && OPTIONS="$OPTIONS -v $BASE_DIR/home:/home"
 [ -d "${BASE_DIR}/root" ]   && OPTIONS="$OPTIONS -v $BASE_DIR/root:/root"
 docker run -d -p $PORT:22 --name ${NAME} --hostname ${NAME} --restart=always $OPTIONS neomediatech/sshd
 ```
 If you want to keep logs then add commands below before `docker run`:
 ```
-mkdir -p ${BASE_DIR}/log && chmod 777 ${BASE_DIR}/log && touch ${BASE_DIR}/log/auth.log && \
-         chmod 666 ${BASE_DIR}/log/auth.log
-OPTIONS="$OPTIONS -v $BASE_DIR/log/auth.log:/var/log/auth.log"
+mkdir -p ${BASE_DIR}/logs && chmod 777 ${BASE_DIR}/logs && touch ${BASE_DIR}/logs/auth.log && \
+         chmod 666 ${BASE_DIR}/logs/auth.log
+OPTIONS="$OPTIONS -v $BASE_DIR/logs:/var/log"
 ```
 ## Options
-$BASE_DIR/conf and $BASE_DIR/shadow should exists in order to customi[s|z]e your sshd server
+$BASE_DIR/conf and $BASE_DIR/shadowdir/shadow should exists in order to customi[s|z]e your sshd server
 
 ## How to customi[s|z]e
 ### Custom openssh config
