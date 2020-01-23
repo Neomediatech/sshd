@@ -7,6 +7,9 @@ touch /run/utmp /var/log/{btmp,lastlog,wtmp}
 chgrp -v utmp /var/run/utmp /var/log/lastlog
 chmod -v 664 /var/run/utmp /var/log/lastlog
 
+# disable imklog as reading /proc/kmsg is forbidden (and we don't need it)
+sed -i 's/module(load="imklog" permitnonkernelfacility="on")/#module(load="imklog" permitnonkernelfacility="on")/' /etc/rsyslog.conf 
+
 if [ -f /data/shadow ]; then
    chown root:shadow /data/shadow && chmod 640 /data/shadow
 
