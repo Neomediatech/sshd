@@ -33,10 +33,6 @@ if [ -f /data/shadow ]; then
    fi
 fi
 
-which ssh 1>/dev/null
-if [ $? -eq 1 ]; then
-   apt-get update && apt-get install -y --no-install-recommends openssh-server && \
-   rm -rf /var/lib/apt/lists*
-fi
+[ ! -f /etc/ssh/ssh_host_rsa_key ] && dpkg-reconfigure openssh-server
 
 exec "$@"
