@@ -40,6 +40,3 @@ $BASE_DIR/conf and $BASE_DIR/shadowdir/shadow should exists in order to customi[
 ### Custom users
 If you want to use some user inside this container (otherwise it's useless) you can bind mount a shadow file in /data/shadow container. This must contains only users you want to allow connect to this container. Keep in mind that every user will have permission to become root user through `sudo` command.
 
-## Why install openssh-server at container startup instead of at image creation?
-Because on every container startup openssh create a new (server) ssh key. If you want to keep the same ssh key follow "How to customi[s|z]e" instructions above.
-
