@@ -1,6 +1,7 @@
 #!/usr/bin/env bash
 
 [ ! -d /run/sshd ] && mkdir -p /run/sshd
+chown root:syslog /var/log && chmod 775 /var/log
 [ ! -f /var/log/auth.log ] && touch /var/log/auth.log && chmod 666 /var/log/auth.log
 
 if [ -f /data/shadow ]; then
