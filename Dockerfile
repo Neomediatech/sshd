@@ -1,6 +1,6 @@
-FROM neomediatech/ubuntu-base:latest
+FROM neomediatech/ubuntu-base:20.04
 
-ENV VERSION=7.6p1-4ubuntu0.3 \
+ENV VERSION=8.2p1-4 \
     SERVICE=sshd
 
 LABEL maintainer="docker-dario@neomediatech.it" \ 
