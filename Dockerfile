@@ -12,7 +12,7 @@ LABEL maintainer="docker-dario@neomediatech.it" \
 RUN apt-get update && apt-get -y dist-upgrade && \
     apt-get install -y --no-install-recommends \
     vim bash-completion sudo curl wget xz-utils \
-    rsyslog openssh-server && \
+    rsyslog openssh-server openssl dnsutils telnet && \
     rm -f /etc/ssh/ssh_host_* && \
     rm -rf /var/lib/apt/lists* 
 
