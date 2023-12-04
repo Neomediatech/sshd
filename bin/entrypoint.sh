@@ -4,9 +4,9 @@
 chown root:syslog /var/log && chmod 775 /var/log
 [ ! -f /var/log/auth.log ] && touch /var/log/auth.log && chmod 666 /var/log/auth.log
 touch /run/utmp /var/log/{btmp,lastlog,wtmp}
-chgrp -v utmp /var/run/utmp /var/log/lastlog
-chmod -v 664 /var/run/utmp /var/log/lastlog
-chmod -v 660 /var/log/btmp
+chgrp utmp /var/run/utmp /var/log/lastlog
+chmod 664 /var/run/utmp /var/log/lastlog
+chmod 660 /var/log/btmp
 
 # disable imklog as reading /proc/kmsg is forbidden (and we don't need it)
 sed -i 's/module(load="imklog" permitnonkernelfacility="on")/#module(load="imklog" permitnonkernelfacility="on")/' /etc/rsyslog.conf 
