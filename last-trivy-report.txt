@@ -1,8 +1,2 @@
 -----------------------------------
-gio 10 lug 2025, 16:57:07, CEST --- ghcr.io/neomediatech/sshd:latest NOT SCANNED
------------------------------------
-gio 10 lug 2025, 16:57:31, CEST --- ghcr.io/neomediatech/sshd:24.04 NOT SCANNED
------------------------------------
-gio 10 lug 2025, 16:57:57, CEST --- ghcr.io/neomediatech/sshd:22.04 NOT SCANNED
------------------------------------
-gio 10 lug 2025, 16:59:13, CEST --- ghcr.io/neomediatech/sshd:20.04 NOT SCANNED
+gio 10 lug 2025, 17:05:14, CEST --- ghcr.io/neomediatech/sshd:latest NOT SCANNED
