@@ -1,4 +1,4 @@
-FROM neomediatech/ubuntu-base:22.04
+FROM ghcr.io/neomediatech/ubuntu-base:22.04
 
 ENV VERSION=8.9p1-3 \
     SERVICE=sshd

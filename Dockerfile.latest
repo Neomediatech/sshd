@@ -1,4 +1,4 @@
-FROM neomediatech/ubuntu-base:latest
+FROM ghcr.io/neomediatech/ubuntu-base:latest
 
 ENV VERSION=latest \
     SERVICE=sshd

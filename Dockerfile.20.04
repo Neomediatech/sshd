@@ -1,4 +1,4 @@
-FROM neomediatech/ubuntu-base:20.04
+FROM ghcr.io/neomediatech/ubuntu-base:20.04
 
 ENV VERSION=8.2p1-4ubuntu0.3 \
     SERVICE=sshd
