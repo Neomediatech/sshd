@@ -1,3 +1,4 @@
 gio 10 lug 2025, 17:12:34, CEST --- ghcr.io/neomediatech/sshd:latest UPDATED (image build needed: true)
 gio 10 lug 2025, 17:15:02, CEST --- ghcr.io/neomediatech/sshd:24.04 UPDATED (image build needed: true)
 gio 10 lug 2025, 17:17:06, CEST --- ghcr.io/neomediatech/sshd:22.04 UPDATED (image build needed: true)
+gio 10 lug 2025, 17:19:10, CEST --- ghcr.io/neomediatech/sshd:20.04 UPDATED (image build needed: true)
