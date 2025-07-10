@@ -4,3 +4,5 @@ gio 10 lug 2025, 17:34:02, CEST --- ghcr.io/neomediatech/sshd:latest NOT SCANNED
 gio 10 lug 2025, 17:34:28, CEST --- ghcr.io/neomediatech/sshd:24.04 NOT SCANNED
 -----------------------------------
 gio 10 lug 2025, 17:34:55, CEST --- ghcr.io/neomediatech/sshd:22.04 NOT SCANNED
+-----------------------------------
+gio 10 lug 2025, 17:35:24, CEST --- ghcr.io/neomediatech/sshd:20.04 NOT SCANNED
