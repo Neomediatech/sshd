@@ -19,7 +19,7 @@ jobs:
       package-name: neomediatech/sshd
       derived-image-prefix: ghcr.io/neomediatech/sshd
       force-build: "false"
-      build-image: "false"
+      update-image: "false"
       package-to-check: "ssh"
     secrets:
       NOTIFY_CMD: ${{ secrets.NOTIFY_CMD }}
