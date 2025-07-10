@@ -1,14 +1,2 @@
 -----------------------------------
-gio 10 lug 2025, 17:31:30, CEST --- ghcr.io/neomediatech/sshd:latest
-
-Report Summary
-
-┌─────────────────────────────────────────────────┬────────┬─────────────────┬─────────┐
-│                     Target                      │  Type  │ Vulnerabilities │ Secrets │
-├─────────────────────────────────────────────────┼────────┼─────────────────┼─────────┤
-│ ghcr.io/neomediatech/sshd:latest (ubuntu 24.04) │ ubuntu │        0        │    -    │
-└─────────────────────────────────────────────────┴────────┴─────────────────┴─────────┘
-Legend:
-- '-': Not scanned
-- '0': Clean (no security findings detected)
-
+gio 10 lug 2025, 17:34:02, CEST --- ghcr.io/neomediatech/sshd:latest NOT SCANNED
