@@ -8,3 +8,4 @@ gio 10 lug 2025, 17:25:41, CEST --- ghcr.io/neomediatech/sshd:22.04 UPDATED
 gio 10 lug 2025, 17:27:00, CEST --- ghcr.io/neomediatech/sshd:20.04 UPDATED
 gio 10 lug 2025, 17:30:51, CEST --- ghcr.io/neomediatech/sshd:latest UPDATED
 gio 10 lug 2025, 17:32:28, CEST --- ghcr.io/neomediatech/sshd:24.04 UPDATED
+gio 31 lug 2025, 11:49:02, UTC --- ghcr.io/neomediatech/sshd:latest UPDATED
