@@ -28,3 +28,5 @@ Legend:
 
 -----------------------------------
 gio 31 lug 2025, 11:52:42, UTC --- ghcr.io/neomediatech/sshd:22.04 NOT SCANNED
+-----------------------------------
+gio 31 lug 2025, 11:53:13, UTC --- ghcr.io/neomediatech/sshd:20.04 NOT SCANNED
