@@ -26,3 +26,5 @@ Legend:
 - '-': Not scanned
 - '0': Clean (no security findings detected)
 
+-----------------------------------
+gio 31 lug 2025, 11:52:42, UTC --- ghcr.io/neomediatech/sshd:22.04 NOT SCANNED
