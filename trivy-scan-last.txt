@@ -1,4 +1,4 @@
-mer 6 ago 2025, 18:34:22, UTC --- ghcr.io/neomediatech/sshd:20.04
+ven 15 ago 2025, 08:58:41, UTC --- ghcr.io/neomediatech/sshd:20.04
 
 Report Summary
 
@@ -12,7 +12,7 @@ Legend:
 - '0': Clean (no security findings detected)
 
 -------------------------------------------------------
-mer 6 ago 2025, 18:33:51, UTC --- ghcr.io/neomediatech/sshd:22.04
+ven 15 ago 2025, 08:58:33, UTC --- ghcr.io/neomediatech/sshd:22.04
 
 Report Summary
 
@@ -26,7 +26,7 @@ Legend:
 - '0': Clean (no security findings detected)
 
 -------------------------------------------------------
-mer 6 ago 2025, 18:34:02, UTC --- ghcr.io/neomediatech/sshd:24.04
+ven 15 ago 2025, 08:58:37, UTC --- ghcr.io/neomediatech/sshd:24.04
 
 Report Summary
 
@@ -40,7 +40,7 @@ Legend:
 - '0': Clean (no security findings detected)
 
 -------------------------------------------------------
-mer 6 ago 2025, 18:34:18, UTC --- ghcr.io/neomediatech/sshd:latest
+ven 15 ago 2025, 08:58:31, UTC --- ghcr.io/neomediatech/sshd:latest
 
 Report Summary
 
