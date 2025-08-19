@@ -24,8 +24,6 @@ jobs:
   build-image:
     uses: Neomediatech/gh-workflows/.github/workflows/build-docker-image-bulk.yml@main
     with:
-      #package-name: neomediatech/sshd
-      #derived-image-prefix: ghcr.io/neomediatech/sshd
       force-build: "${{ github.event.inputs.force-build }}"
       update-image: "true"
       image-type: "generic"
