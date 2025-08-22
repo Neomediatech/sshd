@@ -3,11 +3,12 @@ FROM ghcr.io/neomediatech/ubuntu-base:22.04
 ENV SERVICE=sshd
 
 LABEL org.opencontainers.image.service=${SERVICE} \
-      org.label-schema.vcs-url=https://github.com/Neomediatech/${SERVICE}
+      org.opencontainers.image.source=https://github.com/neomediatech/${SERVICE} \
+      org.opencontainers.package.name=openssh-server
 
 RUN apt-get update && apt-get -y dist-upgrade && \
     apt-get install -y --no-install-recommends \
-    vim bash-completion sudo curl wget xz-utils \
+    vim bash-completion sudo xz-utils \
     rsyslog openssh-server openssl dnsutils telnet && \
     rm -f /etc/ssh/ssh_host_* && \
     rm -rf /var/lib/apt/lists* 
