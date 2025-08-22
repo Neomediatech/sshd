@@ -6,3 +6,7 @@ ven 15 ago 2025, 08:58:06, UTC --- ghcr.io/neomediatech/sshd:latest done (image 
 ven 15 ago 2025, 08:58:09, UTC --- ghcr.io/neomediatech/sshd:22.04 done (image build needed: true)
 ven 15 ago 2025, 08:58:15, UTC --- ghcr.io/neomediatech/sshd:24.04 done (image build needed: true)
 ven 15 ago 2025, 08:58:17, UTC --- ghcr.io/neomediatech/sshd:20.04 done (image build needed: true)
+ven 22 ago 2025, 16:09:57, CEST --- ghcr.io/neomediatech/sshd:22.04 done (image build needed: true)
+ven 22 ago 2025, 16:10:03, CEST --- ghcr.io/neomediatech/sshd:24.04 done (image build needed: true)
+ven 22 ago 2025, 16:10:03, CEST --- ghcr.io/neomediatech/sshd:latest done (image build needed: true)
+ven 22 ago 2025, 16:10:06, CEST --- ghcr.io/neomediatech/sshd:20.04 done (image build needed: true)
