@@ -1,4 +1,4 @@
-lun 22 dic 2025, 11:40:48, CET --- ghcr.io/neomediatech/sshd:20.04
+lun 12 gen 2026, 18:25:00, CET --- ghcr.io/neomediatech/sshd:20.04
 
 Report Summary
 
@@ -12,45 +12,73 @@ Legend:
 - '0': Clean (no security findings detected)
 
 -------------------------------------------------------
-lun 22 dic 2025, 11:40:48, CET --- ghcr.io/neomediatech/sshd:22.04
+lun 12 gen 2026, 18:24:51, CET --- ghcr.io/neomediatech/sshd:22.04
 
 Report Summary
 
 ┌────────────────────────────────────────────────┬────────┬─────────────────┬─────────┬───────────────────┐
 │                     Target                     │  Type  │ Vulnerabilities │ Secrets │ Misconfigurations │
 ├────────────────────────────────────────────────┼────────┼─────────────────┼─────────┼───────────────────┤
-│ ghcr.io/neomediatech/sshd:22.04 (ubuntu 22.04) │ ubuntu │        0        │    -    │         -         │
+│ ghcr.io/neomediatech/sshd:22.04 (ubuntu 22.04) │ ubuntu │        1        │    -    │         -         │
 └────────────────────────────────────────────────┴────────┴─────────────────┴─────────┴───────────────────┘
 Legend:
 - '-': Not scanned
 - '0': Clean (no security findings detected)
 
+
+For OSS Maintainers: VEX Notice
+--------------------------------
+If you're an OSS maintainer and Trivy has detected vulnerabilities in your project that you believe are not actually exploitable, consider issuing a VEX (Vulnerability Exploitability eXchange) statement.
+VEX allows you to communicate the actual status of vulnerabilities in your project, improving security transparency and reducing false positives for your users.
+Learn more and start using VEX: https://trivy.dev/docs/v0.68/guide/supply-chain/vex/repo#publishing-vex-documents
+
+To disable this notice, set the TRIVY_DISABLE_VEX_NOTICE environment variable.
+
+
+ghcr.io/neomediatech/sshd:22.04 (ubuntu 22.04)
+==============================================
+Total: 1 (HIGH: 1, CRITICAL: 0)
+
+┌─────────┬────────────────┬──────────┬────────┬───────────────────┬───────────────────┬──────────────────────────────────────────────────────────────┐
+│ Library │ Vulnerability  │ Severity │ Status │ Installed Version │   Fixed Version   │                            Title                             │
+├─────────┼────────────────┼──────────┼────────┼───────────────────┼───────────────────┼──────────────────────────────────────────────────────────────┤
+│ gpgv    │ CVE-2025-68973 │ HIGH     │ fixed  │ 2.2.27-3ubuntu2.4 │ 2.2.27-3ubuntu2.5 │ GnuPG: GnuPG: Information disclosure and potential arbitrary │
+│         │                │          │        │                   │                   │ code execution via out-of-bounds write...                    │
+│         │                │          │        │                   │                   │ https://avd.aquasec.com/nvd/cve-2025-68973                   │
+└─────────┴────────────────┴──────────┴────────┴───────────────────┴───────────────────┴──────────────────────────────────────────────────────────────┘
 -------------------------------------------------------
-lun 22 dic 2025, 11:41:15, CET --- ghcr.io/neomediatech/sshd:24.04
-
-Report Summary
-
-┌────────────────────────────────────────────────┬────────┬─────────────────┬─────────┬───────────────────┐
-│                     Target                     │  Type  │ Vulnerabilities │ Secrets │ Misconfigurations │
-├────────────────────────────────────────────────┼────────┼─────────────────┼─────────┼───────────────────┤
-│ ghcr.io/neomediatech/sshd:24.04 (ubuntu 24.04) │ ubuntu │        0        │    -    │         -         │
-└────────────────────────────────────────────────┴────────┴─────────────────┴─────────┴───────────────────┘
-Legend:
-- '-': Not scanned
-- '0': Clean (no security findings detected)
-
--------------------------------------------------------
-lun 22 dic 2025, 11:41:01, CET --- ghcr.io/neomediatech/sshd:latest
+lun 12 gen 2026, 18:25:00, CET --- ghcr.io/neomediatech/sshd:latest
 
 Report Summary
 
 ┌─────────────────────────────────────────────────┬────────┬─────────────────┬─────────┬───────────────────┐
 │                     Target                      │  Type  │ Vulnerabilities │ Secrets │ Misconfigurations │
 ├─────────────────────────────────────────────────┼────────┼─────────────────┼─────────┼───────────────────┤
-│ ghcr.io/neomediatech/sshd:latest (ubuntu 24.04) │ ubuntu │        0        │    -    │         -         │
+│ ghcr.io/neomediatech/sshd:latest (ubuntu 24.04) │ ubuntu │        1        │    -    │         -         │
 └─────────────────────────────────────────────────┴────────┴─────────────────┴─────────┴───────────────────┘
 Legend:
 - '-': Not scanned
 - '0': Clean (no security findings detected)
 
+
+For OSS Maintainers: VEX Notice
+--------------------------------
+If you're an OSS maintainer and Trivy has detected vulnerabilities in your project that you believe are not actually exploitable, consider issuing a VEX (Vulnerability Exploitability eXchange) statement.
+VEX allows you to communicate the actual status of vulnerabilities in your project, improving security transparency and reducing false positives for your users.
+Learn more and start using VEX: https://trivy.dev/docs/v0.68/guide/supply-chain/vex/repo#publishing-vex-documents
+
+To disable this notice, set the TRIVY_DISABLE_VEX_NOTICE environment variable.
+
+
+ghcr.io/neomediatech/sshd:latest (ubuntu 24.04)
+===============================================
+Total: 1 (HIGH: 1, CRITICAL: 0)
+
+┌─────────┬────────────────┬──────────┬────────┬───────────────────┬───────────────────┬──────────────────────────────────────────────────────────────┐
+│ Library │ Vulnerability  │ Severity │ Status │ Installed Version │   Fixed Version   │                            Title                             │
+├─────────┼────────────────┼──────────┼────────┼───────────────────┼───────────────────┼──────────────────────────────────────────────────────────────┤
+│ gpgv    │ CVE-2025-68973 │ HIGH     │ fixed  │ 2.4.4-2ubuntu17.3 │ 2.4.4-2ubuntu17.4 │ GnuPG: GnuPG: Information disclosure and potential arbitrary │
+│         │                │          │        │                   │                   │ code execution via out-of-bounds write...                    │
+│         │                │          │        │                   │                   │ https://avd.aquasec.com/nvd/cve-2025-68973                   │
+└─────────┴────────────────┴──────────┴────────┴───────────────────┴───────────────────┴──────────────────────────────────────────────────────────────┘
 -------------------------------------------------------
