@@ -22,3 +22,6 @@ lun 12 gen 2026, 18:24:10, CET --- ghcr.io/neomediatech/sshd:22.04 done (image b
 lun 9 feb 2026, 13:18:35, CET --- ghcr.io/neomediatech/sshd:latest done (image build needed: true)
 lun 9 feb 2026, 13:18:50, CET --- ghcr.io/neomediatech/sshd:22.04 done (image build needed: true)
 lun 9 feb 2026, 13:18:53, CET --- ghcr.io/neomediatech/sshd:24.04 done (image build needed: true)
+lun 2 mar 2026, 12:28:38, CET --- ghcr.io/neomediatech/sshd:24.04 done (image build needed: true)
+lun 2 mar 2026, 12:28:38, CET --- ghcr.io/neomediatech/sshd:latest done (image build needed: true)
+lun 2 mar 2026, 12:28:45, CET --- ghcr.io/neomediatech/sshd:22.04 done (image build needed: true)

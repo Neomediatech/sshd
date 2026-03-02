@@ -1,4 +1,4 @@
-lun 9 feb 2026, 13:19:25, CET --- ghcr.io/neomediatech/sshd:22.04
+lun 2 mar 2026, 12:29:15, CET --- ghcr.io/neomediatech/sshd:22.04
 
 Report Summary
 
@@ -12,7 +12,7 @@ Legend:
 - '0': Clean (no security findings detected)
 
 -------------------------------------------------------
-lun 9 feb 2026, 13:19:29, CET --- ghcr.io/neomediatech/sshd:24.04
+lun 2 mar 2026, 12:29:10, CET --- ghcr.io/neomediatech/sshd:24.04
 
 Report Summary
 
@@ -26,7 +26,7 @@ Legend:
 - '0': Clean (no security findings detected)
 
 -------------------------------------------------------
-lun 9 feb 2026, 13:18:59, CET --- ghcr.io/neomediatech/sshd:latest
+lun 2 mar 2026, 12:29:11, CET --- ghcr.io/neomediatech/sshd:latest
 
 Report Summary
 
