@@ -1,4 +1,4 @@
-lun 13 apr 2026, 09:54:54, CEST --- ghcr.io/neomediatech/sshd:22.04
+lun 11 mag 2026, 10:30:02, CEST --- ghcr.io/neomediatech/sshd:22.04
 
 Report Summary
 
@@ -12,7 +12,7 @@ Legend:
 - '0': Clean (no security findings detected)
 
 -------------------------------------------------------
-lun 13 apr 2026, 09:54:56, CEST --- ghcr.io/neomediatech/sshd:24.04
+lun 11 mag 2026, 10:30:01, CEST --- ghcr.io/neomediatech/sshd:24.04
 
 Report Summary
 
@@ -26,15 +26,17 @@ Legend:
 - '0': Clean (no security findings detected)
 
 -------------------------------------------------------
-lun 13 apr 2026, 09:54:55, CEST --- ghcr.io/neomediatech/sshd:latest
+lun 11 mag 2026, 10:30:01, CEST --- ghcr.io/neomediatech/sshd:latest
 
 Report Summary
 
-┌─────────────────────────────────────────────────┬────────┬─────────────────┬─────────┬───────────────────┐
-│                     Target                      │  Type  │ Vulnerabilities │ Secrets │ Misconfigurations │
-├─────────────────────────────────────────────────┼────────┼─────────────────┼─────────┼───────────────────┤
-│ ghcr.io/neomediatech/sshd:latest (ubuntu 24.04) │ ubuntu │        0        │    -    │         -         │
-└─────────────────────────────────────────────────┴────────┴─────────────────┴─────────┴───────────────────┘
+┌─────────────────────────────────────────────────┬──────────┬─────────────────┬─────────┬───────────────────┐
+│                     Target                      │   Type   │ Vulnerabilities │ Secrets │ Misconfigurations │
+├─────────────────────────────────────────────────┼──────────┼─────────────────┼─────────┼───────────────────┤
+│ ghcr.io/neomediatech/sshd:latest (ubuntu 26.04) │  ubuntu  │        0        │    -    │         -         │
+├─────────────────────────────────────────────────┼──────────┼─────────────────┼─────────┼───────────────────┤
+│ usr/bin/pebble                                  │ gobinary │        0        │    -    │         -         │
+└─────────────────────────────────────────────────┴──────────┴─────────────────┴─────────┴───────────────────┘
 Legend:
 - '-': Not scanned
 - '0': Clean (no security findings detected)
