@@ -1,4 +1,4 @@
-mar 22 set 2026, 10:02:13, CEST --- ghcr.io/neomediatech/sshd:22.04
+lun 26 ott 2026, 17:36:04, CET --- ghcr.io/neomediatech/sshd:22.04
 
 Report Summary
 
@@ -12,7 +12,7 @@ Legend:
 - '0': Clean (no security findings detected)
 
 -------------------------------------------------------
-mar 22 set 2026, 10:02:30, CEST --- ghcr.io/neomediatech/sshd:24.04
+lun 26 ott 2026, 17:36:10, CET --- ghcr.io/neomediatech/sshd:24.04
 
 Report Summary
 
@@ -26,7 +26,7 @@ Legend:
 - '0': Clean (no security findings detected)
 
 -------------------------------------------------------
-mar 22 set 2026, 10:03:24, CEST --- ghcr.io/neomediatech/sshd:latest
+lun 26 ott 2026, 17:36:26, CET --- ghcr.io/neomediatech/sshd:latest
 
 Report Summary
 
@@ -35,10 +35,44 @@ Report Summary
 ├─────────────────────────────────────────────────┼──────────┼─────────────────┼─────────┼───────────────────┤
 │ ghcr.io/neomediatech/sshd:latest (ubuntu 26.04) │  ubuntu  │        0        │    -    │         -         │
 ├─────────────────────────────────────────────────┼──────────┼─────────────────┼─────────┼───────────────────┤
-│ usr/bin/pebble                                  │ gobinary │        0        │    -    │         -         │
+│ usr/bin/pebble                                  │ gobinary │        4        │    -    │         -         │
 └─────────────────────────────────────────────────┴──────────┴─────────────────┴─────────┴───────────────────┘
 Legend:
 - '-': Not scanned
 - '0': Clean (no security findings detected)
 
+
+For OSS Maintainers: VEX Notice
+--------------------------------
+If you're an OSS maintainer and Trivy has detected vulnerabilities in your project that you believe are not actually exploitable, consider issuing a VEX (Vulnerability Exploitability eXchange) statement.
+VEX allows you to communicate the actual status of vulnerabilities in your project, improving security transparency and reducing false positives for your users.
+Learn more and start using VEX: https://trivy.dev/docs/v0.76/guide/supply-chain/vex/repo#publishing-vex-documents
+
+To disable this notice, set the TRIVY_DISABLE_VEX_NOTICE environment variable.
+
+
+usr/bin/pebble (gobinary)
+=========================
+Total: 4 (HIGH: 4, CRITICAL: 0)
+
+┌─────────┬─────────────────┬──────────┬────────┬───────────────────┬─────────────────┬──────────────────────────────────────────────────────────────┐
+│ Library │  Vulnerability  │ Severity │ Status │ Installed Version │  Fixed Version  │                            Title                             │
+├─────────┼─────────────────┼──────────┼────────┼───────────────────┼─────────────────┼──────────────────────────────────────────────────────────────┤
+│ stdlib  │ CVE-2026-111943 │ HIGH     │ fixed  │ v1.27.1           │ 1.26.10, 1.27.3 │ crypto/x509: golang: crypto/x509: Man-in-the-middle attacks  │
+│         │                 │          │        │                   │                 │ via untrusted intermediate certificates                      │
+│         │                 │          │        │                   │                 │ https://avd.aquasec.com/nvd/cve-2026-111943                  │
+│         ├─────────────────┤          │        │                   ├─────────────────┼──────────────────────────────────────────────────────────────┤
+│         │ CVE-2026-78667  │          │        │                   │ 1.26.9, 1.27.2  │ net/http: golang: golang: Denial of Service via crafted HTTP │
+│         │                 │          │        │                   │                 │ Range headers                                                │
+│         │                 │          │        │                   │                 │ https://avd.aquasec.com/nvd/cve-2026-78667                   │
+│         ├─────────────────┤          │        │                   │                 ├──────────────────────────────────────────────────────────────┤
+│         │ CVE-2026-78669  │          │        │                   │                 │ net/http: net/http/internal/http2: golang.org/x/net/http2:   │
+│         │                 │          │        │                   │                 │ net/http: Denial of Service via excessive HTTP/2 SETTINGS    │
+│         │                 │          │        │                   │                 │ frames...                                                    │
+│         │                 │          │        │                   │                 │ https://avd.aquasec.com/nvd/cve-2026-78669                   │
+│         ├─────────────────┤          │        │                   │                 ├──────────────────────────────────────────────────────────────┤
+│         │ CVE-2026-97031  │          │        │                   │                 │ crypto/tls: golang: crypto/tls: Denial of Service via        │
+│         │                 │          │        │                   │                 │ multiple ECH outer extension references...                   │
+│         │                 │          │        │                   │                 │ https://avd.aquasec.com/nvd/cve-2026-97031                   │
+└─────────┴─────────────────┴──────────┴────────┴───────────────────┴─────────────────┴──────────────────────────────────────────────────────────────┘
 -------------------------------------------------------
